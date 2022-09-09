@@ -1,5 +1,10 @@
 import type { NextPage } from "next";
+import Intro from "../components/Intro";
 
-const Home: NextPage = () => <h1 className="text-3xl text-teal-500">Hello world</h1>;
+const Home: NextPage = () => (
+	<>
+		<Intro />
+	</>
+);
 
 export default Home;
