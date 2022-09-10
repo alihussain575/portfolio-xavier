@@ -1,5 +1,6 @@
 import type { GetStaticProps } from "next";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import FeaturedProjects from "../components/FeaturedProjects";
 import Intro from "../components/Intro";
 import Skills from "../components/Skills";
@@ -18,6 +19,7 @@ const Home = ({ skills, projects }: IProps) => (
 		<About />
 		<Skills skills={skills} />
 		<FeaturedProjects projects={projects} />
+		<Contact />
 	</>
 );
 

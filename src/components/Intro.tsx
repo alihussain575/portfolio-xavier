@@ -17,7 +17,7 @@ const Intro = () => (
 				A self-taught <span className="accent">front-end</span> developer with a
 				passion for exploration and continual learning. I like to stay up to date
 				with technologies to create{" "}
-				<Link href="#">
+				<Link href="#projects">
 					<a className="hoverLink accent underline">cool projects</a>
 				</Link>
 				.
