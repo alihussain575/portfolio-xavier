@@ -20,16 +20,16 @@ const Header = () => (
 			</Link>
 			<div className="flex">
 				<nav className="hidden font-medium md:flex md:items-center md:space-x-8 md:mr-5">
-					<Link href="#">
+					<Link href="#about">
 						<a className="hoverLink">About</a>
 					</Link>
-					<Link href="#">
+					<Link href="#skills">
 						<a className="hoverLink">Skills</a>
 					</Link>
-					<Link href="#">
+					<Link href="#projects">
 						<a className="hoverLink">Projects</a>
 					</Link>
-					<Link href="#">
+					<Link href="#contact">
 						<a className="hoverLink">Contact</a>
 					</Link>
 				</nav>

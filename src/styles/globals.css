@@ -7,6 +7,7 @@
 		@apply focus-visible:outline outline-2 outline-offset-2 outline-teal-300;
 	}
 	html {
+		@apply scroll-smooth scroll-pt-48;
 		font-size: clamp(0.82rem, 1vw + 0.35rem, 1rem);
 	}
     body {
@@ -14,6 +15,9 @@
     }
     .hoverLink {
 		@apply transition duration-150 hover:bg-teal-200 hover:text-primary-light;
+	}
+	.hoverIcon {
+		@apply transition duration-150 hover:text-teal-500;
 	}
 	.h1 {
 		@apply text-5xl font-bold text-teal-500;

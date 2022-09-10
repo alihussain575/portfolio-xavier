@@ -5,7 +5,7 @@ import FlexSectionImage from "./FlexSectionImage";
 import FlexSectionText from "./FlexSectionText";
 
 const About = () => (
-	<FlexSection>
+	<FlexSection id="about">
 		<FlexSectionImage>
 			<Image src={aboutImage} layout="fill" alt="about" />
 		</FlexSectionImage>
