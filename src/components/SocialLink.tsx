@@ -11,7 +11,7 @@ interface IProps {
 const SocialLink = ({ href, title, Icon, className, iconClassName }: IProps) => (
 	<a
 		className={twclsx(
-			"flex items-center space-x-2 font-medium text-secondary-light hoverLink",
+			"flex items-center space-x-2 font-medium text-secondary-light hoverLink dark:text-secondary-dark",
 			className
 		)}
 		href={href}

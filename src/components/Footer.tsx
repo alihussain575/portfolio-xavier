@@ -4,7 +4,7 @@ import { IoMdMail } from "react-icons/io";
 import { BsGithub, BsLinkedin, BsFillFilePdfFill } from "react-icons/bs";
 
 const Footer = () => (
-	<footer className="w-full py-6 mt-40 border-t border-zinc-100">
+	<footer className="w-full py-6 mt-40 border-t border-zinc-100 dark:border-primary-light">
 		<Wrapper className="flex items-center flex-col md:flex-row md:justify-between">
 			<SocialLink
 				href="mailto:kovach.daniil.js@gmail.com"

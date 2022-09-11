@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { Html, Head, Main, NextScript } from "next/document";
 
 const Document = () => (
@@ -8,7 +9,12 @@ const Document = () => (
 				rel="stylesheet"
 			/>
 		</Head>
-		<body>
+		<body
+			className={clsx(
+				"font-inter text-primary-light bg-white dark:bg-[#0b0b10] dark:text-primary-dark",
+				"transition duration-100"
+			)}
+		>
 			<Main />
 			<NextScript />
 		</body>

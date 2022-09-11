@@ -10,9 +10,6 @@
 		@apply scroll-smooth scroll-pt-48;
 		font-size: clamp(0.82rem, 1vw + 0.35rem, 1rem);
 	}
-    body {
-        @apply font-inter text-primary-light bg-white;
-    }
     .hoverLink {
 		@apply transition duration-150 hover:bg-teal-200 hover:text-primary-light;
 	}

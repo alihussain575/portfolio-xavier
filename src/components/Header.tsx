@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Wrapper from "./Wrapper";
 import logo from "../assets/logo.svg";
-import { BiMoon } from "react-icons/bi";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Header = () => (
 	<header
 		className={clsx(
 			"fixed w-full py-4 border-b border-zinc-100 bg-white text-secondary-light",
-			"select-none z-50"
+			"dark:bg-[#0b0b10] dark:text-secondary-dark dark:border-primary-light",
+			"select-none z-50 transition duration-100"
 		)}
 	>
 		<Wrapper className="flex items-center justify-between">
@@ -33,14 +34,7 @@ const Header = () => (
 						<a className="hoverLink">Contact</a>
 					</Link>
 				</nav>
-				<button
-					className={clsx(
-						"flex justify-center items-center p-1.5 text-xl hoverLink",
-						"ring-1 ring-zinc-100 rounded-md"
-					)}
-				>
-					<BiMoon />
-				</button>
+				<ThemeSwitcher />
 			</div>
 		</Wrapper>
 	</header>

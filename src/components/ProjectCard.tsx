@@ -14,7 +14,7 @@ interface IProps {
 }
 
 const ProjectCard = ({ title, description, slug, imageUrl, ghUrl, demoUrl }: IProps) => (
-	<div className="block overflow-hidden ring-1 ring-zinc-100 group rounded-xl">
+	<div className="block overflow-hidden ring-1 ring-zinc-100 group rounded-xl dark:ring-primary-light">
 		<Link href="/">
 			<a className="relative block pb-[55%] bg-teal-500 cursor-pointer select-none">
 				<Image
