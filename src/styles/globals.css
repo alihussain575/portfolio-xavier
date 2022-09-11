@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @layer base {
-    * {
+	* {
 		@apply focus-visible:outline outline-2 outline-offset-2 outline-teal-300;
 	}
 	html {
 		@apply scroll-smooth scroll-pt-48;
 		font-size: clamp(0.82rem, 1vw + 0.35rem, 1rem);
 	}
-    .hoverLink {
-		@apply transition duration-150 hover:bg-teal-200 hover:text-primary-light;
+	.hoverLink {
+		@apply transition duration-150 hover:bg-teal-200 hover:text-primary-light dark:hover:bg-teal-500 dark:hover:text-primary-light;
 	}
 	.hoverIcon {
 		@apply transition duration-150 hover:text-teal-500;
