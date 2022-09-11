@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const FeaturedProjects = ({ projects }: IProps) => (
-	<section className="max-w-2xl mt-16 mx-auto md:max-w-none md:mt-20" id="projects">
+	<section className="max-w-2xl mt-20 mx-auto md:max-w-none md:mt-28" id="projects">
 		<ProjectsMasonry
 			projects={projects}
 			before={
