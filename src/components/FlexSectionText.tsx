@@ -1,5 +1,6 @@
 import twclsx from "../utils/twclsx";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+import FadeUp from "./FadeUp";
 
 interface IProps
 	extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -10,7 +11,9 @@ interface IProps
 
 const FlexSectionText = ({ className = "", children, ...rest }: IProps) => (
 	<div className={twclsx("flex-1", className)} {...rest}>
-		{children}
+		<FadeUp cascade damping={0.15}>
+			{children}
+		</FadeUp>
 	</div>
 );
 

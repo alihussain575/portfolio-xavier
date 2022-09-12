@@ -18,7 +18,7 @@ const Skills = ({ skills }: IProps) => (
 			<p className="p">
 				The tools and technologies I use to bring my projects to life:
 			</p>
-			<div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(6rem,1fr))] gap-x-5 gap-y-7 text-xs">
+			<ul className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(6rem,1fr))] gap-x-5 gap-y-7 text-xs">
 				{skills.map((skill) => (
 					<SkillItem
 						title={skill.title}
@@ -26,7 +26,7 @@ const Skills = ({ skills }: IProps) => (
 						key={skill.title}
 					/>
 				))}
-			</div>
+			</ul>
 		</FlexSectionText>
 		<FlexSectionImage>
 			<Image src={skillsImage} layout="fill" alt="skills" />

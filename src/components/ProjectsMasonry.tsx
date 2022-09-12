@@ -2,6 +2,7 @@ import Masonry from "react-masonry-css";
 import ProjectCard from "./ProjectCard";
 import { IProject } from "../types";
 import { urlFor } from "../lib/sanity";
+import FadeUp from "./FadeUp";
 
 const breakpoints = {
 	default: 2,
@@ -22,15 +23,16 @@ const ProjectsMasonry = ({ projects, before, after }: IProps) => (
 	>
 		{before}
 		{projects.map((project) => (
-			<ProjectCard
-				title={project.title}
-				description={project.description}
-				slug={project.slug.current}
-				imageUrl={urlFor(project.coverImage).url()}
-				ghUrl={project.githubUrl}
-				demoUrl={project.demoUrl}
-				key={project.slug.current}
-			/>
+			<FadeUp key={project.slug.current}>
+				<ProjectCard
+					title={project.title}
+					description={project.description}
+					slug={project.slug.current}
+					imageUrl={urlFor(project.coverImage).url()}
+					ghUrl={project.githubUrl}
+					demoUrl={project.demoUrl}
+				/>
+			</FadeUp>
 		))}
 		{after}
 	</Masonry>

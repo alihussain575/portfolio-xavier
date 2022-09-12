@@ -1,5 +1,6 @@
 import { IProject } from "../types";
 import ButtonLink from "./ButtonLink";
+import FadeUp from "./FadeUp";
 import ProjectsMasonry from "./ProjectsMasonry";
 
 interface IProps {
@@ -12,14 +13,20 @@ const FeaturedProjects = ({ projects }: IProps) => (
 			projects={projects}
 			before={
 				<div>
-					<h2 className="h2">Featured projects</h2>
-					<p className="p">Here are some of my projects that I've worked on:</p>
+					<FadeUp cascade damping={0.15}>
+						<h2 className="h2">Featured projects</h2>
+						<p className="p">
+							Here are some of my projects that I've worked on:
+						</p>
+					</FadeUp>
 				</div>
 			}
 			after={
-				<ButtonLink className="block w-fit" href="/" variant="primary">
-					See more projects
-				</ButtonLink>
+				<FadeUp>
+					<ButtonLink className="block w-fit" href="/" variant="primary">
+						See more projects
+					</ButtonLink>
+				</FadeUp>
 			}
 		/>
 	</section>
