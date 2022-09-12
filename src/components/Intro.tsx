@@ -27,7 +27,7 @@ const Intro = () => (
 				so feel free to contact me.
 			</p>
 			<div className="flex mt-8 space-x-4 font-medium">
-				<ButtonLink href="/" variant="primary">
+				<ButtonLink href="/projects" variant="primary">
 					View projects
 				</ButtonLink>
 				<ButtonLink href="mailto:kovach.daniil.js@gmail.com" variant="secondary">

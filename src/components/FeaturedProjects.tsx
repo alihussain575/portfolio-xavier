@@ -11,6 +11,7 @@ const FeaturedProjects = ({ projects }: IProps) => (
 	<section className="max-w-2xl mt-20 mx-auto md:max-w-none md:mt-28" id="projects">
 		<ProjectsMasonry
 			projects={projects}
+			className="flex-row-reverse"
 			before={
 				<div>
 					<FadeUp cascade damping={0.15}>
@@ -23,7 +24,7 @@ const FeaturedProjects = ({ projects }: IProps) => (
 			}
 			after={
 				<FadeUp>
-					<ButtonLink href="/" variant="primary">
+					<ButtonLink href="/projects" variant="primary">
 						See more projects
 					</ButtonLink>
 				</FadeUp>

@@ -14,3 +14,14 @@ export const featuredProjectsQuery = groq`
         demoUrl
     }
 `;
+
+export const allProjectsQuery = groq`
+    *[_type == "project"] | order(_createdAt desc) {
+        title,
+        description,
+        slug,
+        coverImage,
+        githubUrl,
+        demoUrl
+    }
+`;
