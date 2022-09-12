@@ -23,7 +23,7 @@ const FeaturedProjects = ({ projects }: IProps) => (
 			}
 			after={
 				<FadeUp>
-					<ButtonLink className="block w-fit" href="/" variant="primary">
+					<ButtonLink href="/" variant="primary">
 						See more projects
 					</ButtonLink>
 				</FadeUp>

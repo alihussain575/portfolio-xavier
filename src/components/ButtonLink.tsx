@@ -27,7 +27,7 @@ const ButtonLink = ({
 	<Link href={href} passHref={isExternal}>
 		<a
 			className={twclsx(
-				"px-5 py-2 rounded-lg select-none transition duration-150",
+				"block max-w-fit px-5 py-2 rounded-lg select-none transition duration-150",
 				variant === "primary"
 					? "text-white bg-teal-500 hover:bg-teal-600 hover:text-zinc-300"
 					: clsx(
