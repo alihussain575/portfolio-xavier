@@ -13,7 +13,7 @@ const Projects = ({ projects }: IProps) => (
 	<section className="max-w-2xl mt-20 mx-auto md:max-w-none md:mt-28">
 		<ProjectsMasonry
 			projects={projects}
-			before={
+			FirstItem={
 				<div>
 					<FadeUp cascade damping={0.15}>
 						<h1 className="h1">My projects</h1>
@@ -36,6 +36,6 @@ export const getStaticProps: GetStaticProps = async () => {
 		props: {
 			projects
 		},
-        revalidate: 60
+		revalidate: 60
 	};
 };

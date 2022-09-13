@@ -12,7 +12,7 @@ const FeaturedProjects = ({ projects }: IProps) => (
 		<ProjectsMasonry
 			projects={projects}
 			className="flex-row-reverse"
-			before={
+			FirstItem={
 				<div>
 					<FadeUp cascade damping={0.15}>
 						<h2 className="h2">Featured projects</h2>
@@ -22,7 +22,7 @@ const FeaturedProjects = ({ projects }: IProps) => (
 					</FadeUp>
 				</div>
 			}
-			after={
+			LastItem={
 				<FadeUp>
 					<ButtonLink href="/projects" variant="primary">
 						See more projects

@@ -22,16 +22,6 @@ export default {
 			validation: Rule => Rule.required()
 		},
 		{
-			name: "slug",
-			title: "Slug",
-			type: "slug",
-			validation: Rule => Rule.required(),
-			options: {
-				source: "title",
-				maxLength: 96
-			}
-		},
-		{
 			name: "coverImage",
 			title: "Cover image",
 			type: "image",
@@ -51,12 +41,6 @@ export default {
             title: "Demo URL",
             type: "string",
 			validation: Rule => Rule.required()
-        },
-		{
-			name: "body",
-			title: "Body",
-			type: "blockContent",
-			validation: Rule => Rule.required()
-		}
+        }
 	]
 };

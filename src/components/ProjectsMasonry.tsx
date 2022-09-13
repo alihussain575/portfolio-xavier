@@ -12,16 +12,16 @@ const breakpoints = {
 
 interface IProps {
 	projects: IProject[];
-	before?: React.ReactNode;
-	after?: React.ReactNode;
+	FirstItem?: React.ReactNode;
+	LastItem?: React.ReactNode;
 	className?: string;
 	columnClassName?: string;
 }
 
 const ProjectsMasonry = ({
 	projects,
-	before,
-	after,
+	FirstItem,
+	LastItem,
 	className = "",
 	columnClassName = ""
 }: IProps) => (
@@ -30,20 +30,19 @@ const ProjectsMasonry = ({
 		columnClassName={twclsx("space-y-12", columnClassName)}
 		breakpointCols={breakpoints}
 	>
-		{before}
+		{FirstItem}
 		{projects.map((project) => (
-			<FadeUp key={project.slug.current}>
+			<FadeUp key={project._id}>
 				<ProjectCard
 					title={project.title}
 					description={project.description}
-					slug={project.slug.current}
 					imageUrl={urlFor(project.coverImage).url()}
 					ghUrl={project.githubUrl}
 					demoUrl={project.demoUrl}
 				/>
 			</FadeUp>
 		))}
-		{after}
+		{LastItem}
 	</Masonry>
 );
 

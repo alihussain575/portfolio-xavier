@@ -1,4 +1,5 @@
 export interface ISkill {
+	_id: string;
 	title: string;
 	image: {
 		asset: {
@@ -8,11 +9,9 @@ export interface ISkill {
 }
 
 export interface IProject {
+	_id: string;
 	title: string;
 	description: string;
-	slug: {
-		current: string;
-	};
 	coverImage: {
 		asset: {
 			url: string;
@@ -21,5 +20,4 @@ export interface IProject {
 	githubUrl: string;
 	demoUrl: string;
 	publishedAt: string;
-	body: object[];
 }
