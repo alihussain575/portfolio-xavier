@@ -11,7 +11,7 @@ const Header = () => {
 	const { pathname } = useRouter();
 
 	return (
-		<FadeDown className="fixed w-full z-50">
+		<FadeDown className="fixed w-full z-50" delay={800}>
 			<header
 				className={clsx(
 					"fixed w-full py-4 border-b border-zinc-100 bg-white text-secondary-light",

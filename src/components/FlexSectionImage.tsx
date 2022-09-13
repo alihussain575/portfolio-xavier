@@ -1,6 +1,6 @@
 import twclsx from "../utils/twclsx";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
-import { Zoom } from "react-awesome-reveal";
+import FadeZoom from "./FadeZoom";
 
 interface IProps
 	extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -20,15 +20,12 @@ const SectionImage = ({ className = "", children, ...rest }: IProps) => (
 		)}
 		{...rest}
 	>
-		<Zoom
+		<FadeZoom
 			className="absolute w-full h-full"
-			duration={1100}
-			delay={500}
-			fraction={0.3}
-			triggerOnce
+			delay={400}
 		>
 			{children}
-		</Zoom>
+		</FadeZoom>
 	</div>
 );
 

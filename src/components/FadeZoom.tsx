@@ -1,14 +1,14 @@
 import { Reveal, RevealProps } from "react-awesome-reveal";
-import { fadeDownKeyframes } from "../utils/revealKeyframes";
+import { fadeZoomKeyframes } from "../utils/revealKeyframes";
 
 interface IProps extends RevealProps {
 	children: React.ReactNode;
 	[x: string]: any;
 }
 
-const FadeDown = ({ children, ...rest }: IProps) => (
+const FadeZoom = ({ children, ...rest }: IProps) => (
 	<Reveal
-		keyframes={fadeDownKeyframes}
+		keyframes={fadeZoomKeyframes}
 		duration={800}
 		fraction={0.3}
 		triggerOnce
@@ -18,4 +18,4 @@ const FadeDown = ({ children, ...rest }: IProps) => (
 	</Reveal>
 );
 
-export default FadeDown;
+export default FadeZoom;

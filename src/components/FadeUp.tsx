@@ -9,8 +9,8 @@ interface IProps extends RevealProps {
 const FadeUp = ({ children, ...rest }: IProps) => (
 	<Reveal
 		keyframes={fadeUpKeyframes}
-		duration={700}
-		fraction={0.4}
+		duration={800}
+		fraction={0.3}
 		triggerOnce
 		{...rest}
 	>

@@ -19,5 +19,4 @@ export interface IProject {
 	};
 	githubUrl: string;
 	demoUrl: string;
-	publishedAt: string;
 }
