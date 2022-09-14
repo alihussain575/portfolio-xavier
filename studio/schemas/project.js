@@ -10,6 +10,13 @@ export default {
 			validation: Rule => Rule.required()
 		},
 		{
+			name: "tags",
+			title: "Tags",
+			type: "array",
+			of: [{ type: "tag" }],
+			validation: Rule => Rule.required().max(3)
+		},
+		{
 			name: "description",
 			title: "Description",
 			type: "string",

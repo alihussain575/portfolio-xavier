@@ -17,6 +17,16 @@ export interface IProject {
 			url: string;
 		};
 	};
+	tags: ITag[];
 	githubUrl: string;
 	demoUrl: string;
+}
+
+export interface ITag {
+	title: string;
+	image: {
+		asset: {
+			url: string;
+		};
+	};
 }

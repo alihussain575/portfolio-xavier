@@ -36,6 +36,7 @@ const ProjectsMasonry = ({
 				<ProjectCard
 					title={project.title}
 					description={project.description}
+					tags={project.tags}
 					imageUrl={urlFor(project.coverImage).url()}
 					ghUrl={project.githubUrl}
 					demoUrl={project.demoUrl}
