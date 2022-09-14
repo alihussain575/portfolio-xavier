@@ -16,6 +16,7 @@ const SocialLink = ({ href, title, Icon, className, iconClassName }: IProps) => 
 		)}
 		href={href}
 		target="_blank"
+		rel="noreferrer"
 	>
 		<span className={twclsx("text-xl", iconClassName)}>{Icon}</span>
 		<span>{title}</span>

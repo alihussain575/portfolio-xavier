@@ -21,6 +21,7 @@ const ProjectCard = ({ title, tags, description, imageUrl, ghUrl, demoUrl }: IPr
 			className="relative block pb-[55%] bg-teal-500 cursor-pointer select-none"
 			href={demoUrl}
 			target="_blank"
+			rel="noreferrer"
 		>
 			<Image
 				className={clsx(
@@ -29,11 +30,17 @@ const ProjectCard = ({ title, tags, description, imageUrl, ghUrl, demoUrl }: IPr
 				)}
 				src={imageUrl}
 				layout="fill"
+				alt={title}
 			/>
 		</a>
 		<div className="px-4 pt-3 pb-6">
 			<div className="flex justify-between text-lg">
-				<a className="font-bold hoverLink" href={demoUrl} target="_blank">
+				<a
+					className="font-bold hoverLink"
+					href={demoUrl}
+					target="_blank"
+					rel="noreferrer"
+				>
 					{title}
 				</a>
 				<div className="flex space-x-4">
@@ -41,6 +48,7 @@ const ProjectCard = ({ title, tags, description, imageUrl, ghUrl, demoUrl }: IPr
 						className="flex items-center hoverIcon"
 						href={ghUrl}
 						target="_blank"
+						rel="noreferrer"
 					>
 						<FaGithub />
 					</a>
@@ -48,12 +56,18 @@ const ProjectCard = ({ title, tags, description, imageUrl, ghUrl, demoUrl }: IPr
 						className="flex items-center hoverIcon"
 						href={demoUrl}
 						target="_blank"
+						rel="noreferrer"
 					>
 						<FiExternalLink />
 					</a>
 				</div>
 			</div>
-			<a className="block mt-2 mr-[14%] text-sm" href={demoUrl} target="_blank">
+			<a
+				className="block mt-2 mr-[14%] text-sm"
+				href={demoUrl}
+				target="_blank"
+				rel="noreferrer"
+			>
 				{description}
 			</a>
 			<div className="flex space-x-2 mt-4 text-xs">

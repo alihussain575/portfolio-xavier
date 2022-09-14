@@ -24,7 +24,12 @@ const ButtonLink = ({
 	isExternal = false,
 	...rest
 }: IProps) => (
-	<Link href={href} passHref={isExternal}>
+	<Link
+		href={href}
+		passHref={isExternal}
+		target={isExternal ? "_blank" : "_self"}
+		rel="noreferrer"
+	>
 		<a
 			className={twclsx(
 				"block max-w-fit px-5 py-2 rounded-lg select-none transition duration-150",
@@ -36,7 +41,6 @@ const ButtonLink = ({
 					  ),
 				className
 			)}
-			target={isExternal ? "_blank" : "_self"}
 			{...rest}
 		>
 			{children}
