@@ -12,7 +12,8 @@ const Document = () => (
 		<body
 			className={clsx(
 				"font-inter text-primary-light bg-white dark:bg-[#0b0b10] dark:text-primary-dark",
-				"transition duration-100"
+				"scrollbar scrollbar-thumb-teal-500 scrollbar-thumb-rounded-md scrollbar-thin",
+				"hover:scrollbar-thumb-teal-600 active:scrollbar-thumb-teal-700 transition duration-100"
 			)}
 		>
 			<Main />
