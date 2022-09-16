@@ -7,8 +7,6 @@ interface IProps {
 	image?: string;
 }
 
-const baseUrl = "https://portfolio-k0d0d.vercel.app";
-
 const Meta = ({
 	title = "Daniil Kovach",
 	description = "Daniil Kovach is a self-taught front-end web developer from Ukraine.",
@@ -16,7 +14,7 @@ const Meta = ({
 }: IProps) => {
 	const { pathname } = useRouter();
 
-	const fullUrl = baseUrl + pathname;
+	const fullUrl = process.env.NEXT_PUBLIC_BASE_URL + pathname;
 
 	return (
 		<Head>
@@ -31,12 +29,12 @@ const Meta = ({
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta name="twitter:url" content={fullUrl} />
 			<meta name="twitter:title" content={title} />
-			<meta
-				name="twitter:description"
-				content={description}
-			/>
+			<meta name="twitter:description" content={description} />
 			<meta name="twitter:image" content={image} />
-			<meta name="google-site-verification" content="ek94IiP8spEm3oh4S4m786s2COm6J9KUDZBz3KsXh7I" />
+			<meta
+				name="google-site-verification"
+				content={process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION}
+			/>
 			<meta charSet="utf-8" />
 			<title>{title}</title>
 		</Head>
