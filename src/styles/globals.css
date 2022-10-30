@@ -20,12 +20,6 @@
 		@apply text-5xl font-bold text-teal-500;
 	}
 	.h2 {
-		@apply text-3xl font-bold text-teal-500;
-	}
-	.p {
-		@apply mt-6;
-	}
-	.accent {
-		@apply text-teal-500;
+		@apply mb-6 text-3xl font-bold text-teal-500;
 	}
 }

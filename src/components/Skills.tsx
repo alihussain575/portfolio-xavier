@@ -15,7 +15,7 @@ const Skills = ({ skills }: IProps) => (
 	<FlexSection id="skills">
 		<FlexSectionText>
 			<h2 className="h2">My skills</h2>
-			<p className="p">
+			<p>
 				The tools and technologies I use to bring my projects to life:
 			</p>
 			<ul className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(6rem,1fr))] gap-x-5 gap-y-7 text-xs">

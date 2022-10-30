@@ -16,7 +16,7 @@ const FeaturedProjects = ({ projects }: IProps) => (
 				<div>
 					<FadeUp cascade damping={0.15}>
 						<h2 className="h2">Featured projects</h2>
-						<p className="p">
+						<p>
 							Here are some of my projects that I've worked on:
 						</p>
 					</FadeUp>

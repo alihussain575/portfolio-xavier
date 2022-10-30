@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import SanityText from "./SanityText";
 import { BsFillFilePdfFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import introImage from "../assets/intro.svg";
 import ButtonLink from "./ButtonLink";
@@ -8,24 +8,18 @@ import FlexSectionImage from "./FlexSectionImage";
 import FlexSectionText from "./FlexSectionText";
 import SocialLink from "./SocialLink";
 
-const Intro = () => (
+interface IProps {
+	largeText: object[];
+	smallText: object[];
+}
+
+const Intro = ({ largeText, smallText }: IProps) => (
 	<FlexSection>
 		<FlexSectionText>
-			<h2 className="h2">Hello world! I'm -</h2>
+			<h2 className="h2 mb-0">Hello world! I'm -</h2>
 			<h1 className="-ml-1 mt-1 font-bold text-6xl">Daniil Kovach</h1>
-			<p className="mt-8 text-xl">
-				A self-taught <span className="accent">front-end</span> developer with a
-				passion for exploration and continual learning. I like to stay up to date
-				with technologies to create{" "}
-				<Link href="#projects">
-					<a className="hoverLink accent underline">cool projects</a>
-				</Link>
-				.
-			</p>
-			<p className="mt-3">
-				I'm currently <span className="accent">open to new opportunities</span>,
-				so feel free to contact me.
-			</p>
+			<SanityText className="mt-8 text-xl" content={largeText} />
+			<SanityText className="mt-3" content={smallText} />
 			<div className="flex mt-8 space-x-4 font-medium">
 				<ButtonLink href="/projects" variant="primary">
 					View projects

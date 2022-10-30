@@ -1,5 +1,18 @@
 import { groq } from "next-sanity";
 
+export const introQuery = groq`*[_type == "intro"][0] {
+    largeText,
+    smallText
+}`;
+
+export const aboutQuery = groq`*[_type == "about"][0] {
+    body
+}`;
+
+export const contactQuery = groq`*[_type == "contact"][0] {
+    body
+}`;
+
 export const skillsQuery = groq`
     *[_type == "skill"] | order(_createdAt asc) {
         _id,

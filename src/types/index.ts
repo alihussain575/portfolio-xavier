@@ -1,3 +1,14 @@
+export interface IIntro {
+	largeText: object[];
+	smallText: object[];
+}
+
+export interface IAbout {
+	body: object[];
+}
+
+export interface IContact extends IAbout {}
+
 export interface ISkill {
 	_id: string;
 	title: string;

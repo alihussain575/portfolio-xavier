@@ -23,7 +23,7 @@ const Projects = ({ projects }: IProps) => (
 					<div>
 						<FadeUp cascade damping={0.15}>
 							<h1 className="h1">My projects</h1>
-							<p className="p">
+							<p className="mt-6">
 								Here's an archive of things that I've worked on:
 							</p>
 						</FadeUp>

@@ -4,20 +4,18 @@ import ButtonLink from "./ButtonLink";
 import FlexSection from "./FlexSection";
 import FlexSectionImage from "./FlexSectionImage";
 import FlexSectionText from "./FlexSectionText";
+import SanityText from "./SanityText";
 
-const Contact = () => (
+interface IProps {
+	text: object[];
+}
+
+const Contact = ({ text }: IProps) => (
 	<FlexSection id="contact">
 		<FlexSectionText>
 			<h2 className="h2">Get in touch</h2>
-			<p className="p mb-6">
-				Do you have an idea? An opportunity that match my profile? Feel free to
-				reach me for any collaboration or work opportunities, I'm{" "}
-				<span className="accent">always open</span> to new challenges.
-			</p>
-			<ButtonLink
-				href="mailto:kovach.daniil.js@gmail.com"
-				variant="primary"
-			>
+			<SanityText className="mb-6" content={text} />
+			<ButtonLink href="mailto:kovach.daniil.js@gmail.com" variant="primary">
 				Contact me
 			</ButtonLink>
 		</FlexSectionText>
