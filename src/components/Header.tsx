@@ -1,14 +1,14 @@
+"use client"
+
 import clsx from "clsx";
 import Image from "next/image";
-import Link from "next/link";
 import Wrapper from "./Wrapper";
-import logo from "../assets/logo.svg";
 import ThemeSwitcher from "./ThemeSwitcher";
 import FadeDown from "./FadeDown";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
-	const { pathname } = useRouter();
+	const pathname = usePathname();
 
 	return (
 		<FadeDown className="fixed w-full z-50" delay={800}>
@@ -20,32 +20,32 @@ const Header = () => {
 				)}
 			>
 				<Wrapper className="flex items-center justify-between">
-					<Link href="/">
-						<a className="relative h-7 w-12 flex items-center">
-							<Image src={logo} layout="fill" alt="logo" />
-						</a>
-					</Link>
+					<a className="relative h-7 w-12 flex items-center" href="/">
+						<Image src="/logo.svg" fill alt="logo" />
+					</a>
 					<div className="flex">
 						<nav className="hidden font-medium md:flex md:items-center md:space-x-8 md:mr-5">
 							{pathname === "/" ? (
 								<>
-									<Link href="#about">
-										<a className="hoverLink">About</a>
-									</Link>
-									<Link href="#skills">
-										<a className="hoverLink">Skills</a>
-									</Link>
-									<Link href="#projects">
-										<a className="hoverLink">Projects</a>
-									</Link>
-									<Link href="#contact">
-										<a className="hoverLink">Contact</a>
-									</Link>
+									{[
+										{ href: "#about", title: "About" },
+										{ href: "#skills", title: "Skills" },
+										{ href: "#projects", title: "Projects" },
+										{ href: "#contact", title: "Contact" }
+									].map((item, index) => (
+										<a
+											className="hoverLink"
+											href={item.href}
+											key={index}
+										>
+											{item.title}
+										</a>
+									))}
 								</>
 							) : (
-								<Link href="/">
-									<a className="hoverLink">Home</a>
-								</Link>
+								<a className="hoverLink" href="/">
+									Home
+								</a>
 							)}
 						</nav>
 						<ThemeSwitcher />

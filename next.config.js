@@ -4,6 +4,9 @@ const nextConfig = {
 	swcMinify: true,
 	images: {
 		domains: ["cdn.sanity.io"]
+	},
+	experimental: {
+		appDir: true
 	}
 };
 

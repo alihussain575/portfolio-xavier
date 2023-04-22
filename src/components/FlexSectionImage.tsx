@@ -3,11 +3,7 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 import FadeZoom from "./FadeZoom";
 
 interface IProps
-	extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-	className?: string;
-	children: React.ReactNode;
-	[x: string]: any;
-}
+	extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 const SectionImage = ({ className = "", children, ...rest }: IProps) => (
 	<div
@@ -20,10 +16,7 @@ const SectionImage = ({ className = "", children, ...rest }: IProps) => (
 		)}
 		{...rest}
 	>
-		<FadeZoom
-			className="absolute w-full h-full"
-			delay={400}
-		>
+		<FadeZoom className="absolute w-full h-full" delay={400}>
 			{children}
 		</FadeZoom>
 	</div>

@@ -1,10 +1,9 @@
+"use client"
+
 import { Reveal, RevealProps } from "react-awesome-reveal";
 import { fadeZoomKeyframes } from "../utils/revealKeyframes";
 
-interface IProps extends RevealProps {
-	children: React.ReactNode;
-	[x: string]: any;
-}
+interface IProps extends RevealProps {}
 
 const FadeZoom = ({ children, ...rest }: IProps) => (
 	<Reveal

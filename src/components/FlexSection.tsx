@@ -1,11 +1,7 @@
 import twclsx from "../utils/twclsx";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-interface IProps extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-	className?: string;
-	children: React.ReactNode;
-	[x: string]: any;
-}
+interface IProps extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {}
 
 const FlexSection = ({ className = "", children, ...rest }: IProps) => (
 	<section

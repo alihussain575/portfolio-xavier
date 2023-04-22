@@ -14,7 +14,7 @@ const SkillItem = ({ title, imageUrl }: IProps) => (
 		)}
 	>
 		<div className="relative w-10 h-10">
-			<Image src={imageUrl} layout="fill" alt={title} />
+			<Image src={imageUrl} fill alt={title} />
 		</div>
 		<p className="mt-4 font-medium">{title}</p>
 	</li>

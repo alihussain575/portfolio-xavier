@@ -16,9 +16,9 @@ interface IProps {
 }
 
 const ProjectCard = ({ title, tags, description, imageUrl, ghUrl, demoUrl }: IProps) => (
-	<div className="block overflow-hidden ring-1 ring-zinc-100 group rounded-xl dark:ring-primary-light">
+	<div className="block ring-1 ring-zinc-100 group rounded-xl dark:ring-primary-light">
 		<a
-			className="relative block pb-[55%] bg-teal-500 cursor-pointer select-none"
+			className="relative block pb-[55%] bg-teal-500 cursor-pointer select-none overflow-hidden"
 			href={demoUrl}
 			target="_blank"
 			rel="noreferrer"
@@ -29,7 +29,7 @@ const ProjectCard = ({ title, tags, description, imageUrl, ghUrl, demoUrl }: IPr
 					"group-focus-within:opacity-60 group-focus-within:scale-125"
 				)}
 				src={imageUrl}
-				layout="fill"
+				fill
 				alt={title}
 			/>
 		</a>

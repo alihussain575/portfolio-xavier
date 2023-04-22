@@ -1,10 +1,9 @@
+"use client"
+
 import { Reveal, RevealProps } from "react-awesome-reveal";
 import { fadeDownKeyframes } from "../utils/revealKeyframes";
 
-interface IProps extends RevealProps {
-	children: React.ReactNode;
-	[x: string]: any;
-}
+interface IProps extends RevealProps {}
 
 const FadeDown = ({ children, ...rest }: IProps) => (
 	<Reveal

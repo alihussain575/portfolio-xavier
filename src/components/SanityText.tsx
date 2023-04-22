@@ -8,8 +8,8 @@ interface IProps {
 const SanityText = ({ content, className }: IProps) => (
 	<PortableText
 		content={content}
-		dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
-		projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
+		dataset={process.env.SANITY_DATASET}
+		projectId={process.env.SANITY_PROJECT_ID}
 		className={className}
 		serializers={{
 			em: (props: any) => <em className="text-teal-500 not-italic" {...props} />,

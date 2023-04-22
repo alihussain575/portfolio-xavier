@@ -1,3 +1,5 @@
+"use client";
+
 import Masonry from "react-masonry-css";
 import ProjectCard from "./ProjectCard";
 import { IProject } from "../types";
@@ -40,6 +42,7 @@ const ProjectsMasonry = ({
 					imageUrl={urlFor(project.coverImage).url()}
 					ghUrl={project.githubUrl}
 					demoUrl={project.demoUrl}
+					key={project._id}
 				/>
 			</FadeUp>
 		))}

@@ -3,11 +3,7 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 import FadeUp from "./FadeUp";
 
 interface IProps
-	extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-	className?: string;
-	children: React.ReactNode;
-	[x: string]: any;
-}
+	extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 const FlexSectionText = ({ className = "", children, ...rest }: IProps) => (
 	<div className={twclsx("flex-1", className)} {...rest}>
