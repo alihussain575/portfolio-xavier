@@ -30,13 +30,7 @@ const ParticleCanvas = ({ children }: ParticleCanvasProps) => {
     return (
         <div
             ref={canvasRef}
-            style={{
-                width: '100%',
-                height: '650px',
-                top: 0,
-                position: 'absolute',
-                overflow: 'hidden',
-            }}
+            className='h-[464px] w-full top-0 absolute overflow-hidden md:h-[650px]'
         >{children}</div>
     );
 };
