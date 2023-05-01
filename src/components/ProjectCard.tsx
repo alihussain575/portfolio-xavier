@@ -43,7 +43,7 @@ const ProjectCard = ({ title, tags, description, imageUrl, ghUrl, demoUrl }: IPr
 				>
 					{title}
 				</a>
-				<div className="flex space-x-4">
+				{/* <div className="flex space-x-4">
 					<a
 						className="flex items-center hoverIcon"
 						href={ghUrl}
@@ -60,7 +60,7 @@ const ProjectCard = ({ title, tags, description, imageUrl, ghUrl, demoUrl }: IPr
 					>
 						<FiExternalLink />
 					</a>
-				</div>
+				</div> */}
 			</div>
 			<a
 				className="block mt-2 mr-[14%] text-sm"

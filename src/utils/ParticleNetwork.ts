@@ -159,7 +159,7 @@ class ParticleNetwork {
 
   setVelocity(speed?: string): number {
     if (speed === "fast") {
-      return 3;
+      return 2;
     } else if (speed === "slow") {
       return 0.33;
     } else if (speed === "none") {

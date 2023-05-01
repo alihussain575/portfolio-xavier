@@ -42,7 +42,7 @@ export const featuredProjectsQuery = groq`
 `;
 
 export const allProjectsQuery = groq`
-    *[_type == "project"] | order(_createdAt desc) {
+    *[_type == "project"] | order(_updatedAt desc) {
         _id,
         title,
         tags,
