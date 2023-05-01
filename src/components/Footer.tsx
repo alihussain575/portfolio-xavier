@@ -7,8 +7,8 @@ const Footer = () => (
 	<footer className="w-full py-6 mt-40 border-t border-zinc-100 dark:border-primary-light">
 		<Wrapper className="flex items-center flex-col md:flex-row md:justify-between">
 			<SocialLink
-				href="mailto:kovach.daniil.js@gmail.com"
-				title="kovach.daniil.js@gmail.com"
+				href="mailto:xavierb2531@gmail.com"
+				title="xavierb2531@gmail.com"
 				Icon={<IoMdMail />}
 			/>
 			<div className="flex space-x-6 mt-4 md:mt-0">
@@ -23,7 +23,7 @@ const Footer = () => (
 					Icon={<BsLinkedin />}
 				/>
 				<SocialLink
-					href="https://drive.google.com/file/d/1ofasGYjbqz2VZpdXdyxBp-BGPOiBjShH/view"
+					href="https://www.xavier-work.com/Resume.pdf"
 					title="Resume"
 					Icon={<BsFillFilePdfFill />}
 				/>

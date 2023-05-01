@@ -57,7 +57,7 @@ cd portfolio
 -   Install dependencies
 
 ```bash
-npm i && cd /studio && sanity install
+npm i && cd /test && sanity install
 ```
 
 -   add the Sanity CMS Project ID and Dataset to the .env.local file
@@ -83,15 +83,15 @@ npm start
 npm run build
 ```
 
-Studio directory
+test directory
 
--   run the studio server
+-   run the test server
 
 ```bash
 sanity start
 ```
 
--   build the studio
+-   build the test
 
 ```bash
 sanity build

@@ -5,6 +5,7 @@ import FeaturedProjects from "../components/FeaturedProjects";
 import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import { commonMetadata } from "../utils/commonMetadata";
+import SpareTime from "../components/SpareTime";
 
 export const metadata: Metadata = {
 	...commonMetadata
@@ -16,6 +17,7 @@ const Home = () => (
 		<About />
 		<Skills />
 		<FeaturedProjects />
+		<SpareTime />
 		<Contact />
 	</>
 );

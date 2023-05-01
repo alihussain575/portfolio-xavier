@@ -7,15 +7,16 @@ import FlexSectionImage from "./FlexSectionImage";
 import FlexSectionText from "./FlexSectionText";
 import SocialLink from "./SocialLink";
 import { getIntro } from "../lib/fetchers";
+import ParticleCanvas from "./Canvas";
 
 const Intro = async () => {
 	const { largeText, smallText } = await getIntro();
 
 	return (
 		<FlexSection>
-			<FlexSectionText>
-				<h2 className="h2 mb-0">Hello world! I'm -</h2>
-				<h1 className="-ml-1 mt-1 font-bold text-6xl">Daniil Kovach</h1>
+			<FlexSectionText className="relative z-40" >
+				<h2 className="h2 mb-0">Hello!</h2>
+				<h1 className="-ml-1 mt-1 font-bold text-6xl">I am Xavier Johnson</h1>
 				<SanityText className="mt-8 text-xl" content={largeText} />
 				<SanityText className="mt-3" content={smallText} />
 				<div className="flex mt-8 space-x-4 font-medium">
@@ -47,7 +48,7 @@ const Intro = async () => {
 					/>
 				</div>
 			</FlexSectionText>
-			<FlexSectionImage className="flex-1 md:pb-[35%]">
+			<FlexSectionImage className="flex-1 md:pb-[35%] z-40 ">
 				<Image src="/intro.svg" priority fill alt="intro" />
 			</FlexSectionImage>
 		</FlexSection>

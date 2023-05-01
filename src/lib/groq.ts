@@ -13,6 +13,14 @@ export const contactQuery = groq`*[_type == "contact"][0] {
     body
 }`;
 
+export const spareTimeQuery = groq`
+    *[_type =='spare'] | order(_createdAt asc) {
+        _id,
+	    description,
+	    image
+    }
+`;
+
 export const skillsQuery = groq`
     *[_type == "skill"] | order(_createdAt asc) {
         _id,

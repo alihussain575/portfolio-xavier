@@ -1,11 +1,12 @@
-import { IAbout, IIntro, IProject, ISkill } from "../types";
+import { IAbout, IIntro, IProject, ISkill, ISpareTime } from "../types";
 import {
 	aboutQuery,
 	allProjectsQuery,
 	contactQuery,
 	featuredProjectsQuery,
 	introQuery,
-	skillsQuery
+	skillsQuery,
+	spareTimeQuery
 } from "./groq";
 import { sanityClient } from "./sanity";
 
@@ -45,4 +46,10 @@ const getContact = async () => {
 	return about as IAbout;
 };
 
-export { getIntro, getAbout, getSkills, getFeaturedProjects, getAllProjects, getContact };
+const getSpare = async () =>{
+	const spareTime = await sanityClient.fetch(spareTimeQuery);
+
+	return spareTime as ISpareTime
+}
+
+export { getIntro, getAbout, getSkills, getFeaturedProjects, getAllProjects, getContact , getSpare};

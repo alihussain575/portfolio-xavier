@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
     "@sanity/image-url": "^1.0.2",
     "clsx": "^1.2.1",
     "next": "^13.3.0",
@@ -19,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-masonry-css": "^1.0.16",
+    "react-particles-js": "^3.6.0",
     "react-portable-text": "^0.6.0",
     "tailwind-merge": "^1.6.0",
     "tailwind-scrollbar": "^2.0.1"
