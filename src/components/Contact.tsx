@@ -14,9 +14,6 @@ const Contact = async () => {
 			<FlexSectionText>
 				<h2 className="h2">Get in touch</h2>
 				<SanityText className="mb-6" content={body} />
-				<ButtonLink href="mailto:xavierb2531@gmail.com" variant="primary">
-					Contact me
-				</ButtonLink>
 			</FlexSectionText>
 			<FlexSectionImage className="flex-1 md:pb-[25%]">
 				<Image src="/contact.svg" fill alt="contact" />
