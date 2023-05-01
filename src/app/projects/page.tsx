@@ -7,8 +7,8 @@ import ParticleCanvas from "../../components/Canvas";
 
 export const metadata: Metadata = {
 	...commonMetadata,
-	title: "Projects | Daniil Kovach",
-	description: "An archive of K0D0D's projects"
+	title: "Projects | Xavier Johnson",
+	description: "An archive of Xavier's projects"
 };
 
 const Projects = async () => {
